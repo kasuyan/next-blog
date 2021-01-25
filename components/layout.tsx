@@ -6,7 +6,7 @@ import Link from 'next/link'
 const name = 'Kasuyan'
 export const siteTitle = 'Kasuyan nextjs blog'
 
-function Layout({children, home}) {
+function Layout({children, home}:{children:React.ReactNode, home?:boolean}) {
   return (
     <div className={styles.container}>
       <Head>
