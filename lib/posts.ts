@@ -25,8 +25,6 @@ export function getSortedPostsData() {
     const matterResult = matter(fileContents)
 
     // データを id と合わせる
-    console.log('matterResult',matterResult)
-    console.log('matterResult.data', matterResult.data)
     return {
       id,
       ...matterResult.data as { date: string; title: string }

@@ -37,6 +37,19 @@ export default function Home({
           </li>
           ))}
         </ul>
+        <ul>
+          <li><Link href="/static-page/">Static page</Link></li>
+          <li>Static Side Generation
+            <ul>
+              <li><Link href="/static-side-generation/star">Generation1</Link></li>
+              <li><Link href="/static-side-generation/2">Generation2</Link></li>
+              <li><Link href="/static-side-generation/3">Generation3</Link></li>
+              <li><Link href="/static-side-generation/4">Generation4</Link></li>
+              <li><Link href="/static-side-generation/5">Generation5</Link></li>
+            </ul>
+          </li>
+          <li><Link href="/server-side-rendering/">ServerSideRenderingPage</Link></li>
+        </ul>
       </section>
     </Layout>
   )
