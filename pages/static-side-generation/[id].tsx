@@ -34,12 +34,12 @@ export default function Ssg ({data, launches}:{data:MovieList, launches:any}) {
 
 
 export const getStaticProps:GetStaticProps = async ({params}) => {
+
   // spacex
   const client = new ApolloClient({
     uri: 'https://api.spacex.land/graphql/',
     cache: new InMemoryCache()
   })
-
   const spacexData = await client.query({
     query: gql`
       query GetLaunchesPast {
